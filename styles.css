@@ -1,0 +1,213 @@
+/** Basic Styles **/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+
+/** Title & extras Styles **/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header h1 {
+    font-size: 200px;
+    margin: 0px;
+}
+
+.social-container {
+    display: flex;
+}
+
+.social-container ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px;
+}
+
+.social-container ul li a img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/** Pokemon Styles **/
+
+.pkm-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 10px;
+}
+
+.pkm-card {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: ease 0.5s;
+}
+
+.shiny-card {
+    background: rgba(255, 230, 96, 0.56);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 230, 96, 0.5);
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/blob.svg");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 150px;
+    height: 150px;
+}
+
+.shiny-btn {
+    display: flex;
+    width: 100%;
+    background: none;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.fa-solid {
+    color: gold;
+}
+
+
+/** Pokemon Types Styles **/
+
+.pkm-type {
+    width: 80%;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+    -webkit-text-stroke: 0.8px rgb(45, 45, 45);
+    margin-bottom: 10px;
+    margin-top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5px;
+}
+
+.grass {
+    background-color: #4FEC8A;
+}
+
+.fire {
+    background-color: #ed7d64;
+}
+
+.water {
+    background-color: #5FB1F1;
+}
+
+.electric {
+    background-color: #ede15e;
+}
+
+.poison {
+    background-color: #8879F1;
+}
+
+.fighting {
+    background-color: #954764;
+}
+
+.flying {
+    background-color: #97c1e0;
+}
+
+.bug {
+    background-color: #a5ec4f;
+}
+
+.normal {
+    background-color: #aeaeae;
+}
+
+.psychic {
+    background-color: #ED6D9C;
+}
+
+.rock {
+    background-color: #955c51;
+}
+
+.ground {
+    background-color: #856156;
+}
+
+.steel {
+    background-color: #C9C4C3;
+}
+
+.ice {
+    background-color: #C6E4F7;
+}
+
+.ghost {
+    background-color: #9963C2;
+}
+
+.fairy {
+    background-color: #ED85CB;
+}
+
+.dragon {
+    background-color: #767FA6;
+}
+
+.dark {
+    background-color: #3B3B3B;
+}
+
+
+/** Spinner Styles **/
+
+.spinner-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
